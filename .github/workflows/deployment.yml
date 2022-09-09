@@ -35,7 +35,7 @@ jobs:
           node-version: 16.x
       - run: docker build -t setup
       - run: echo "Deploy"
-  deploy-test:
+  deploy-production:
     needs: test-ci
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-20.04
